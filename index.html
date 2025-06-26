@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Venda da Escola Secundária de Caneças - RE/MAX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #0070c0;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img.logo {
+      height: 40px;
+    }
+    header .agent-info {
+      text-align: right;
+      font-size: 14px;
+    }
+    nav {
+      background: #004080;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .banner {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Escola_Secund%C3%A1ria_de_Cane%C3%A7as_-_Odivelas.jpg/1280px-Escola_Secund%C3%A1ria_de_Cane%C3%A7as_-_Odivelas.jpg') no-repeat center center/cover;
+      height: 400px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .price-tag {
+      margin-top: 15px;
+      font-size: 1.5em;
+      background: rgba(0,0,0,0.5);
+      padding: 8px 15px;
+      border-radius: 8px;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      border-bottom: 3px solid #0070c0;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #0070c0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .video-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .contact-agent {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .contact-agent img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .contact-details {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    .contact-details strong {
+      color: #0070c0;
+    }
+    form {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+    form input, form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+    form button {
+      background-color: #0070c0;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #005a8c;
+    }
+    footer {
+      background: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/REMAX_Logo.svg/2560px-REMAX_Logo.svg.png" alt="RE/MAX Logo" />
+    <div class="agent-info">
+      Francisco Moura<br />
+      📞 <a href="tel:+351912345678" style="color: white; text-decoration: none;">+351 912 345 678</a><br />
+      ✉️ <a href="mailto:francisco.moura@remax.pt" style="color: white; text-decoration: none;">francisco.moura@remax.pt</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#sobre">Sobre a Escola</a>
+    <a href="#fotos">Fotos & Vídeo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="banner" id="home">
+    <div>
+      Venda Exclusiva RE/MAX<br />
+      Escola Secundária de Caneças<br />
+      <div class="price-tag">Preço: €28.851.800</div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre a Escola Secundária de Caneças</h2>
+    <p>
+      A Escola Secundária de Caneças é uma instituição educativa de referência localizada na região de Caneças, concelho de Odivelas. Com uma infraestrutura robusta, a escola oferece um ambiente moderno e seguro para milhares de alunos, com amplas áreas de ensino, desporto e espaços de convívio. Este imóvel representa uma oportunidade única para investimento, seja para fins educativos, empresariais ou de requalificação urbana.
+    </p>
+  </section>
+
+  <section id="fotos">
+    <h2>Fotos & Vídeo</h2>
+    <div class="gallery">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Escola_Secund%C3%A1ria_de_Cane%C3%A7as_-_Odivelas.jpg/1280px-Escola_Secund%C3%A1ria_de_Cane%C3%A7as_-_Odivelas.jpg" alt="Escola Secundária de Caneças Exterior" />
+      <img src="https://www.cm-odivelas.pt/sites/default/files/styles/og_image/public/2022-02/3_escola_secundaria_cane%C3%A7as.jpg" alt="Escola Secundária de Caneças - Entrada" />
+      <img src="https://www.cm-odivelas.pt/sites/default/files/styles/og_image/public/2022-02/2_escola_secundaria_cane%C3%A7as.jpg" alt="Escola Secundária de Caneças - Vista Lateral" />
+    </div>
+    <div class="video-container">
+      <!-- Espaço para vídeo embutido: substitui o link do src pelo teu vídeo preferido -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo da Escola Secundária de Caneças" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-agent">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Foto do Agente Francisco Moura" />
+      <div class="contact-details">
+        <p>
+          Para mais informações sobre esta oportunidade única de investimento, contacte <strong>Francisco Moura</strong>, o seu especialista RE/MAX, disponível para visitas e esclarecimentos.
+        </p>
+        <p>
+          📞 Telefone: <a href="tel:+351912345678">+351 912 345 678</a><br />
+          ✉️ Email: <a href="mailto:francisco.moura@remax.pt">francisco.moura@remax.pt</a>
+        </p>
+        <form action="mailto:francisco.moura@remax.pt" method="post" enctype="text/plain">
+          <input type="text" name="nome" placeholder="Nome" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <textarea name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 RE/MAX Portugal. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://www.facebook.com/remaxportugal" target="_blank" rel="noopener">Facebook</a> |
+      <a href="https://www.instagram.com/remaxportugal" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://twitter.com/remaxportugal" target="_blank" rel="noopener">Twitter</a>
+    </p>
+    <p>Endereço RE/MAX Local: Rua Exemplo, 123, Lisboa, Portugal</p>
+  </footer>
+</body>
+</html>
